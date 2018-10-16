@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Brett Warren}\\\medskip % Your name
+	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Summery}
+
+%{\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\\\medskip}
+
+I am a hard-working and reliable worker, who is rigorous in ensuring good design is carried out and always tries to perform to the highest possible standard. I have a passion for well constructed, high performance codebases with business use cases and productivity in mind. I am a team player who can both follow and develop rapport with others, and show leadership where it is required of me. Always excited to learn new skills and to further develop myself, I always aim to rise up to and adapt to whatever situation the day may bring. 
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{July - September 2018} % Duration
+{FT} % FT/PT (full time or part time)
+{Fluke Precision Instruments} % Employer
+{Software Design Engineer} % Job title
+{During Summer 2018 I was employed in developing testing facilities to assist with a R\&D project; this included developing unit tests for a remote interface and for an embedded GUI, alongside additional development of source code, administration of equipment, and collaboration with a subcontractor to more thoroughly test selected modules. I was required to learn and work with a variety of tools, including industry wide and in-house programs. I worked closely with the core development team to understand their requirements and ensure that the developed tools were as useful as possible to development } % Description
+
+%------------------------------------------------
+
+\workposition{June - August 2017} % Duration
+{PT} % FT/PT (full time or part time)
+{Sports Direct} % Employer
+{Casual Sales Assistant} % Job title
+{Work consisted primarily of cashiering and customer assistance, which included helping them with inquires, retrieving in-store deliveries, and cross-selling related products. I was also responsible for other miscellaneous jobs such as managing inventory, maintaining product aisles, cleaning the store, and other requests from line managers.}  % Description
+
+%------------------------------------------------
+
+\workposition{June - July 2015} % Duration
+{Work Experience} % FT/PT (full time or part time)
+{Pakefield School} % Employer
+{IT Support} % Job title
+{Assisted senior technicians with ticket resolution, printer maintenance, PC maintenance, and on one day supervision of a computer aided test. In addition I participated in educational activities which included modifying computer hardware and other activities related to IT support.} % Description
+
+\workposition{July - September 2013, July - September 2014} % Duration
+{FT} % FT/PT (full time or part time)
+{Drives 4 U} % Employer
+{Manual Labourer} % Job title
+{Tasks included a variety of activities to assist seniors and to perform independently like cement mixing, resin paving, tarmacking, landscaping, and other miscellaneous tasks such as interacting with clients and running errands. Work hours changed based on the current job so sometimes work extended from 6 until 8pm, with breaks.} % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Wilberforce Rd, Norwich, Suffolk \\ % Address
+			\raisebox{-1pt}{\faPhone} & 07799715624 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:brettwarrenmail@gmail.com}{brettwarrenmail@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/PythonHito}{https://github.com/PythonHito} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/brett-warren-744074157/}{https://www.linkedin.com/in/brett-warren-744074157/} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2017 - 2020 (Ongoing)} % Duration
+	{Beachelor of Science} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer Science} % Department
+	{University of East Anglia} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{2015 - 2017} % Duration
+	{Various A-Levels/BTECs} % Degree
+	{2 A*, 1 B, 1 D*} % Honours, achievements or distinctions (e.g. first class honours)
+	{Further Maths/Maths, Game Design} % Department
+	{Lowestoft Sixth Form College} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}	
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2017}{\textbf{Bright Spark Scholarship}}{}
+	\tableentry{}{\textit{University of East Anglia}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%		SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Proficient}{Python (including psycopg2, flask, PyQt)}{}
+	\tableentry{}{Java}{}
+	\tableentry{}{Databases (PostgreSQL, XML/JSON)}{}
+	\tableentry{}{ Linux}{spaceafter}
+	%------------------------------------------------
+		
+	\tableentry{Familiar}{Windows, \LaTeX}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+\medskip % Extra whitespace before the next section
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Vince Gosling}}{spaceafter}
+	\tableentry{Position}{Site Director \& Engineering Manager}{}
+	\tableentry{Employer}{\href{https://us.flukecal.com/}{Fluke Calibration}}{spaceafter}
+	\tableentry{Phone}{07870 980853}{}
+
+	%------------------------------------------------
+	
+	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Steve Tullburg}}{spaceafter}
+	\tableentry{Position}{Line Manager}{}
+	\tableentry{Employer}{\href{https://www.sportsdirect.com/}{Sports Direct}}{}
+	\tableentry{Phone}{0344 332 5263 (Branch Landline)}{}
+	\tableentry{Mobile}{07478 558898}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\medskip % Extra whitespace before the next section
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
